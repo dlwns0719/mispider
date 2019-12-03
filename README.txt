@@ -25,11 +25,17 @@ mispyder runs on Python 3.6
 
 Given a two target and source RNA sequece, obtain each sgRNA target sequence and one or two mismatchs via csv files.
 
- 
+ngg_list_up.py 
     ```
-    enzymatic_protospacers(
-        '~/scaffolds_directory/',
-        'chr6:136640001-136680000',
-        'mm8.fasta'
-        )
+    CCR5 = target RNA sequence (type : string)
+    CCR2 = souece RNA sequence (type : string)
+    NGG_list_up(CCR5,'CCR5')
+    NGG_list_up(CCR2,'CCR2')
     ```
+
+mismatch.py
+    '''
+    CCR5_ngg_DataFrame = return from ngg_list_up.py (type : pandas DataFrame)
+    CCR2_ngg_DataFrame = return from ngg_list_up.py (type : pandas DataFrame)
+    mismatch(CCR5_ngg_DataFrame, CCR2_ngg_DataFrame, 'CCR5', 'CCR2')
+    '''
