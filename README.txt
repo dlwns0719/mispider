@@ -21,7 +21,7 @@ install pandas (version 0.25.0)
 
 mispyder runs on Python 3.6
  
-## Usage
+## Usage (example running code on main.py)
 
 Given a two target and source RNA sequece, obtain each sgRNA target sequence and one or two mismatchs via csv files.
 
